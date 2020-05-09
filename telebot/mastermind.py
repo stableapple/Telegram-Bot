@@ -1,11 +1,10 @@
-import requests
+import urllib.request, json
 from bs4 import BeautifulSoup
 
-def get_response(msg):
-    url = "https://www.worldometers.info/coronavirus/#count"
-    resp=requests.get(url)
-    print(resp.status_code)
-    soup=BeautifulSoup(resp.text, 'html.parser')
-    l=soup.find("div", {"class":"maincounter-number"})
-    y=l.span.text
-    return y
+def get_response():
+    url = "https://api.covid19api.com/summary"
+    response = urllib.request.urlopen(url)
+    data = json.loads(response.read())
+    for x in  data['Countries'][101]:
+        return x
+
