@@ -14,3 +14,6 @@ Enter "/start" to interact with the bot. Enter the name of the country for which
 
 
 The data comes from [Covid19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest)
+
+
+Stay Safe!!
