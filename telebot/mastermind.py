@@ -13,4 +13,4 @@ def get_response():
             for key, value in x.items():
                 tmpstring = tmpstring + "{0:<20} {1}".format(key, value) + "\n"
             return tmpstring
-get_response()
+
